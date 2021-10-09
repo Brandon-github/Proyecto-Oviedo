@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- Bar -->
+    <!-- Container fixed -->
     <div class="container__fixed">
+        <!-- Bar -->
         <div class="bar">
             <h2 class="bar__text">Aprobecha nuestros precios y cotiza con nosotros</h2>
             <a href="#" class="button bar__button">Haciendo click <b class="important-text">aquí</b></a>
@@ -77,15 +78,71 @@
                 <li class="nav__item">
                     <a href="" class="nav__link">Categoria 7</a>
                 </li>
-                <li class="nav__item">
-                    <a href="" class="nav__link">Categoria 7</a>
-                </li>
             </ul>
         </nav>
     </div>
-
+    <!-- Container -->
+    <div class="container">
+        <!-- Carrousel -->
+        <div class="carrousel">
+            <div class="carrousel__image">
+                <img src="./images/carrousel_img1.jpg" alt="image_carrousel1" class="image">
+            </div>
+            <div class="carrousel__image">
+                <img src="./images/carrousel_img2.jpg" alt="image_carrousel2" class="image">
+            </div>
+            <div class="carrousel__image">
+                <img src="./images/carrousel_img3.jpg" alt="image_carrousel3" class="image">
+            </div>
+            <div class="carrousel__content">
+                <h2 class="carrousel__title">Revive tus espacios</h2>
+                <p class="carrousel__text">¡En pinturas sabemos como ayudarte!</p>
+                <a href="#" class="carrousel__button">Mira todos los productos</a>
+            </div>
+            <div class="carrousel__controls">
+                <span class="carrousel__btn"></span>
+                <span class="carrousel__btn"></span>
+                <span class="carrousel__btn"></span>
+            </div>
+        </div>
+        <!-- bar -->
+        <div class="bar bar--red">
+            <i class="fas fa-truck bar__icon"></i>
+            <h2 class="bar__text bar__text--white">Haz el seguimiento de tu pedido haciendo</h2>
+            <a href="#" class="button bar__button bar__button--link">Click aquí</a>
+            <span class="bar__ext">>></span>
+        </div>
+        <!-- Section productos -->
+        <section class="product">
+            <h2 class="product__title">Productos destacados</h2>
+            <div class="product__container">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./images/product1.png" alt="producto" class="image">
+                        <div class="card__ofert">
+                            <span class="card__internet">exclusive internet</span>
+                            <span class="card__porcent">30%</span>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__name">Titulo producto</h3>
+                        <span class="card__cost">$XX.000</span>
+                        <span class="card__cost--before">$XX.000</span>
+                        <div class="card__buttons">
+                            <div class="card__count">
+                                <span class="card__count__button">-</span>
+                                <span class="card__number">1</span>
+                                <span class="card__count__button">+</span>
+                            </div>
+                            <a href="#" class="button card__button">Agregar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     
-
-
+    <script src="./js/carrousel.js"></script>
 </body>
 </html>
