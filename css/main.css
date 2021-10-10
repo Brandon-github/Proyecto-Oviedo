@@ -12,6 +12,7 @@
 
     --bg-color: #f2f4f6;
     --bg-color-second: #414040;
+    --bg-color-three: #000000;
 }
 
 /* Global Styles */
@@ -456,8 +457,8 @@ body
 
 .image
 {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -664,12 +665,14 @@ body
     flex-wrap: wrap;
     background-color: var(--primary-color);
     overflow: hidden;
+    width: 100%;
 }
 
+/* Desc box --> 3 Box */
 .destac__box
 {
-    width: 550px;
-    height: 350px;
+    width: 50%;
+    height: 450px;
     position: relative;
     margin-right: 15px;
 }
@@ -727,39 +730,81 @@ body
     background-color: var(--primary-color);
 }
 
+/* Destac Carrousel */
 .destac__carrousel
 {
-    width: 870px;
-    height: 350px;
-    background-color: red;
+    width: calc(50% - 15px);
     display: flex;
     align-items: center;
-    overflow: hidden;
     position: relative;
 }
 
-.destac__carrousel > .card 
+.destac__space
 {
-    transform: scale(0.8);
+    width: fit-content;
+    max-width: 90vh;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.destac__list
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destac__list > .card
+{
+    margin: 10px;
+    float: left;
+    transform: scale(0.9);
+    transition: .3s linear;
+}
+
+.desc__buttons
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 999;
+}
+
+.desc__button
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 /* Section enlac */
 .enlac__container
 {
     width: 100%;
-    height: 350px;
+    height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 30px;
+    position: relative;
 }
 
 .enlac__box
 {
-    width: 470px;
+    width: 32%;
     height: 350px;
     position: relative;
+    margin: 20px 0;
 }
 
 .enlac__box::before
@@ -815,31 +860,102 @@ body
 .enlac__box--large
 {
     width: 100%;
-    height: 350px;
+    height: 300px;
+}
+
+.enlac__box--large > .enlac__content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.enlac__box--large > .enlac__content .enlac__title
+{
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+.enlac__box--large > .enlac__content .enlac__paragraph
+{
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.enlac__box--large > .enlac__content .button
+{
+    margin-top: 40px;
+    padding: 1em 3em;
+}
+
+/* Section product 2*/
+.section__product--white
+{
+    background-color: var(--primary-color);
+    padding: 0;
     position: relative;
 }
 
-.enlac__box--large > .button
+/* Section service */
+.service
 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 350px;
 }
 
-.enlac__box--large > .button.button--white
+.box__services
 {
-    padding: 0.8em 5em;
+    width: 100%;
+    height: 200px;
+    background-color: var(--bg-color-three);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.enlac__box--large > .enlac__title
+.box__service
 {
-    text-transform: uppercase;
+    color: var(--primary-color);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
 }
 
+.box__service
+{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
 
+.box__service:last-child
+{
+    border-left: none;
+}
 
+.box__service__icon
+{
+    font-size: 2em;
+    margin-right: 15px;
+}
 
+.box_service__content
+{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.box__service__title
+{
+    font-size: 18px;
+}
+
+.box__service__link
+{
+    color: var(--bg-color);
+}
 
 
 
