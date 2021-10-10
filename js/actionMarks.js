@@ -30,7 +30,7 @@ buttonMark.forEach((btn, i) => {
                 // Validacion si el desplazamiento derecho no sobrepara el numero de elementos
                 if (markWidthLeft != (markWidth * mark.length)) {
                     markWidthLeft += markWidth;
-                    console.log(`L:${markWidthLeft} | R:${markWidthRight}`);
+                    // console.log(`L:${markWidthLeft} | R:${markWidthRight}`);
                     mark.forEach((markItem) => {
                      markItem.style.cssText = `transform: translateX(-${markWidthLeft}px)`;
                     });
@@ -50,7 +50,7 @@ buttonMark.forEach((btn, i) => {
                 // Validacion si el desplazamiento derecho no sobrepara el numero de elementos
                 if (markWidthRight != (markWidth * (mark.length - 2))) {
                     markWidthRight += markWidth;
-                    console.log(`L:${markWidthLeft} | R:${markWidthRight}`);
+                    // console.log(`L:${markWidthLeft} | R:${markWidthRight}`);
                     mark.forEach((markItem) => {
                         markItem.style.cssText = `transform: translateX(${markWidthRight}px)`;
                     });
