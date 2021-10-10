@@ -444,6 +444,7 @@ body
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    margin: 40px 0;
 }
 
 .card__image
@@ -613,7 +614,7 @@ body
     display: flex;
     position: relative;
     transition: .3s linear;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .mark__item
@@ -653,6 +654,190 @@ body
     height: 30px;
     cursor: pointer;
 }
+
+/* Section Destac */
+.destac
+{
+    padding: 30px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.destac__box
+{
+    width: 550px;
+    height: 350px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.destac__box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.destac__content
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 20px;
+}
+
+.destac__title
+{
+    font-size: 3em;
+    color: var(--primary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.button--white
+{
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+.button--white:hover
+{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.destac__mark
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 60px;
+    background-color: var(--primary-color);
+}
+
+.destac__carrousel
+{
+    width: 870px;
+    height: 350px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.destac__carrousel > .card 
+{
+    transform: scale(0.8);
+}
+
+/* Section enlac */
+.enlac__container
+{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.enlac__box
+{
+    width: 470px;
+    height: 350px;
+    position: relative;
+}
+
+.enlac__box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.enlac__content
+{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    color: var(--primary-color);
+    width: 100%;
+}
+
+.enlac__title
+{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.enlac__paragraph
+{
+    padding: 0 20px;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.enlac__box > .button
+{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.enlac__box > .button.button--white
+{
+    padding: 0.8em 5em;
+}
+
+.enlac__box--large
+{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.enlac__box--large > .button
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.enlac__box--large > .button.button--white
+{
+    padding: 0.8em 5em;
+}
+
+.enlac__box--large > .enlac__title
+{
+    text-transform: uppercase;
+}
+
+
 
 
 
