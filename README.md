@@ -3,7 +3,7 @@ Maquetacion de pagina para la Ferreteria Oviedo
 
 ## Visitar pagina
 
-Visitar la pagina [Aaqí](https://proyecto-oviedo.vercel.app/)
+Visitar la pagina [Aquí](https://proyecto-oviedo.vercel.app/)
 
 ## Interface de la pagina final
 
