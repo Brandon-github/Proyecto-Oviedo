@@ -1,0 +1,177 @@
+
+
+@media screen and (max-width: 950px)
+{
+
+
+    .bar__button
+    {
+        background-color: transparent;
+        color: var(--second-color);
+        font-size: 1.2em;
+    }
+    
+    /* Header */
+    .header
+    {
+        padding-left: 120px;
+        padding-right: 80px;
+        --primary-color: #ffffffc4;
+    }
+
+    .header__logo
+    {
+        opacity: 0.85;
+    }
+
+    .header__text
+    {
+        display: none;
+    }
+
+    .header__button
+    {
+        display: none;
+    }
+    
+    .header__toggler
+    {
+        display: block;
+        --bg-color: #f2f4f6d7;
+    }
+
+    .header__links
+    {
+        margin-left: auto;
+    }
+
+    .header__logo 
+    {
+        width: 180px;
+        height: 80px;
+    }
+
+    .header-ico
+    {
+        font-size: 2em;
+    }
+
+    .header__form
+    {
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+        width: 100%;
+        height: 50px;
+        border-radius: none;
+        --bg-color: #f2f4f6d7;
+        background-color: var(--bg-color);
+    }
+
+    /* Comuna box */
+    .comuna__box
+    {
+        --primary-color: #ffffff;
+        background-color: var(--primary-color);
+    }
+
+    .header__input
+    {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 80%;
+    }
+
+    /* Nav */
+    .nav
+    {
+        position: fixed;
+        top: 0;
+        left: -400px;
+        width: 400px;
+        height: 100%;
+        z-index: 999;
+        overflow-x: hidden;
+        background-color: var(--primary-color);
+        padding: 0;
+    }
+
+    .nav__content
+    {
+        display: flex;
+    }
+
+    .nav__list
+    {
+        flex-direction: column;
+    }
+
+    
+    .nav__link:hover
+    {
+        color: var(--second-color);
+        background-color: transparent;
+    }
+
+    /* Carrousel  - inicio */
+    .carrousel
+    {
+        margin-top: 135px;
+    }
+
+    .carrousel__title
+    {
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    /* Section destac */
+    .destac__title
+    {
+        font-size: 2em;
+        float: left;
+    }
+
+    .destac__space
+    {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .desc__buttons
+    {
+        display: none;
+    }
+
+    /* Section enlac */
+    .enlac__box
+    {
+        width: 100%;
+    }
+
+    .service
+    {
+        margin-top: 1100px;
+    }
+
+    .box__services__space
+    {
+        overflow-x: scroll;
+    }
+
+    /* Section footert -- foot */
+    .foot__text
+    {
+        display: none;
+    }
+
+    .foot__content
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
