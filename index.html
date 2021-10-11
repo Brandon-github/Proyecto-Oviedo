@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <!-- Container fixed -->
@@ -17,10 +18,13 @@
         <!-- Bar -->
         <div class="bar">
             <h2 class="bar__text">Aprobecha nuestros precios y cotiza con nosotros</h2>
-            <a href="/" class="button bar__button">Haciendo click <b class="important-text">aquí</b></a>
+            <a href="#" class="button bar__button">Haciendo click <b class="important-text">aquí</b></a>
         </div>
         <!-- Header -->
         <header class="header">
+            <div class="header__toggler">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="header__logo">
                 <img src="./images/logo.png" alt="logo" class="logo">
             </div>
@@ -32,26 +36,34 @@
             </form>
             <!-- Header links -->
             <ul class="header__links">
+                <li class="header__item" id="btnComuna">
+                    <a href="#" class="header__link">
+                        <i class="fas fa-map-marker-alt header-ico"></i>
+                        <span class="header__text">comuna</span>
+                    </a>
+                    <div class="comuna__box">
+                        <p class="comuna_paragraph">
+                            Estás viendo productos disponibles en esta comuna. Si no es donde te encuentras.
+                            <b>Aqui puedes cambiar tu ubicacion</b>
+                        </p>
+                        <button class="btn__comuna btn__comuna--white" id="mantener">Mantener</button>
+                        <button class="btn__comuna btn__comuna--red" id="cambiar">Cambiar</button>
+                    </div>
+                </li>
                 <li class="header__item">
-                    <a href="/" class="header__link">
-                        <i class="fas fa-map-marker-alt"></i>
-                        comuna
+                    <a href="#" class="header__link">
+                        <i class="fas fa-user header-ico"></i>
+                        <span class="header__text">registrarse</span>
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="/" class="header__link">
-                        <i class="fas fa-user"></i>
-                        registrarse
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="/" class="header__link">
-                        <i class="fas fa-sign-out-alt"></i>
-                        ingresar
+                    <a href="#" class="header__link">
+                        <i class="fas fa-sign-out-alt header-ico"></i>
+                        <span class="header__text">ingresar</span>
                     </a>
                 </li>
             </ul>
-            <a href="/" class="button header__button">
+            <a href="#" class="button header__button">
                 <i class="fas fa-shopping-cart icon"></i>
                 <p class="header__button__text">$XX.XXX</p>
                 <p class="header__button__text2">Ir al carriro</p>
@@ -59,6 +71,19 @@
         </header>
         <!-- Nav-->
         <nav class="nav">
+            <!-- Nav content -->
+            <div class="nav__content">
+                <div class="nav__toogler">
+                    <i class="fas fa-bars"></i>
+                    <span class="nav__toogler__text">Ménu</span>
+                </div>
+                <a href="#" class="nav__button">
+                    <i class="fas fa-user nav__button__icon"></i>Registrarse
+                </a>
+                <div class="nav__toogler nav__toogler--exit">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="" class="nav__link">Categoria 1</a>
@@ -100,7 +125,7 @@
             <div class="carrousel__content">
                 <h2 class="carrousel__title">Revive tus espacios</h2>
                 <p class="carrousel__text">¡En pinturas sabemos como ayudarte!</p>
-                <a href="/" class="carrousel__button">Mira todos los productos</a>
+                <a href="#" class="carrousel__button">Mira todos los productos</a>
             </div>
             <!-- Carrousel controls -->
             <div class="carrousel__controls">
@@ -113,7 +138,7 @@
         <div class="bar bar--red">
             <i class="fas fa-truck bar__icon"></i>
             <h2 class="bar__text bar__text--white">Haz el seguimiento de tu pedido haciendo</h2>
-            <a href="/" class="button bar__button bar__button--link">Click aquí</a>
+            <a href="#" class="button bar__button bar__button--link">Click aquí</a>
             <span class="bar__ext">>></span>
         </div>
         <!-- Section productos -->
@@ -139,7 +164,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +187,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +210,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +233,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -221,26 +246,30 @@
             <h4 class="mark__subtitle">Una selecion de marcas exclusivas para ofercerte los mejores productos ¡conócelas todas!</h4>
             <!-- Carrousel marks -->
             <div class="marks__container">
-                <div class="mark__item">
-                    <img src="./images/mark1.png" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark2.png" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark3.png" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark4.png" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark5.jpg" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark6.png" alt="" class="image image-mask">
-                </div>
-                <div class="mark__item">
-                    <img src="./images/mark7.png" alt="" class="image image-mask">
+                <div class="marks__space">
+                    <div class="marks__list">
+                        <div class="mark__item">
+                            <img src="./images/mark1.png" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark2.png" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark3.png" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark4.png" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark5.jpg" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark6.png" alt="" class="image image-mask">
+                        </div>
+                        <div class="mark__item">
+                            <img src="./images/mark7.png" alt="" class="image image-mask">
+                        </div>
+                    </div>
                 </div>
                 <!-- Marks buttons -->
                 <div class="maks__buttons">
@@ -258,7 +287,7 @@
                 <img src="./images/photo.jpg" alt="" class="image">
                 <div class="destac__content">
                     <h2 class="destac__title">Productos destacados</h2>
-                    <a href="/" class="button button--white">Mira todos los productos</a>
+                    <a href="#" class="button button--white">Mira todos los productos</a>
                 </div>
                 <span class="destac__mark">
                     <img src="./images/mark7.png" alt="" class="image image-mask">
@@ -266,6 +295,7 @@
             </div>
             <!-- Destac carrousel -->
             <div class="destac__carrousel">
+                <!-- Destac space -->
                 <div class="destac__space">
                     <!-- destac buttons -->
                     <div class="desc__buttons">
@@ -296,7 +326,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +348,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -340,7 +370,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -362,7 +392,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +414,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -406,7 +436,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -428,7 +458,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -450,7 +480,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +502,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -494,7 +524,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -516,7 +546,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -538,7 +568,7 @@
                                         <span class="card__count__number">1</span>
                                         <span class="card__count__button">+</span>
                                     </div>
-                                    <a href="/" class="card__button">Agregar</a>
+                                    <a href="#" class="card__button">Agregar</a>
                                 </div>
                             </div>
                         </div>
@@ -554,7 +584,7 @@
                         <h2 class="enlac__title">Herramientas</h2>
                         <p class="enlac__paragraph">Equipate con todas las herramientas segun tus necesidades</p>
                     </div>
-                    <a href="/" class="button button--white">Ver todo</a>
+                    <a href="#" class="button button--white">Ver todo</a>
                 </div>
                 <div class="enlac__box">
                     <img src="./images/enlac2.jpg" alt="" class="image">
@@ -562,7 +592,7 @@
                         <h2 class="enlac__title">Pinturas</h2>
                         <p class="enlac__paragraph">Renueva tu casa con las últimas tendencias de color</p>
                     </div>
-                    <a href="/" class="button button--white">Ver todo</a>
+                    <a href="#" class="button button--white">Ver todo</a>
                 </div>
                 <div class="enlac__box">
                     <img src="./images/enlac3.jpg" alt="" class="image">
@@ -570,14 +600,14 @@
                         <h2 class="enlac__title">Construcción</h2>
                         <p class="enlac__paragraph">Materiales y maquinarias de excelencia para todos tus proyectos</p>
                     </div>
-                    <a href="/" class="button button--white">Ver todo</a>
+                    <a href="#" class="button button--white">Ver todo</a>
                 </div>
                 <div class="enlac__box enlac__box--large">
                     <img src="./images/enlac4.jpg" alt="" class="image">
                     <div class="enlac__content">
                         <h2 class="enlac__title">Especial maquinaria</h2>
                         <p class="enlac__paragraph">Domina el terreno</p>
-                        <a href="/" class="button button--white">Comprar ahora</a>
+                        <a href="#" class="button button--white">Comprar ahora</a>
                     </div>
                 </div>
             </div>
@@ -604,7 +634,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -627,7 +657,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -650,7 +680,7 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
@@ -673,39 +703,44 @@
                                 <span class="card__count__number">1</span>
                                 <span class="card__count__button">+</span>
                             </div>
-                                <a href="/" class="card__button">Agregar</a>
+                                <a href="#" class="card__button">Agregar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Services -->
             <div class="box__services">
-                <div class="box__service">
-                    <i class="fas fa-truck box__service__icon"></i>
-                    <div class="box_service__content">
-                        <h2 class="box__service__title">Despacho a domicilio</h2>
-                        <a href="" class="box__service__link">Ver más condiciones de despacho ></a>
-                    </div>
-                </div>
-                <div class="box__service">
-                    <i class="fas fa-store box__service__icon"></i>
-                    <div class="box_service__content">
-                        <h2 class="box__service__title">Retiro en tienda</h2>
-                        <a href="" class="box__service__link">Compra online y retira en tienda ></a>
-                    </div>
-                </div>
-                <div class="box__service">
-                    <i class="fas fa-credit-card box__service__icon"></i>
-                    <div class="box_service__content">
-                        <h2 class="box__service__title">Todo medio de pago</h2>
-                        <a href="" class="box__service__link">Conoce todos los detalles ></a>
-                    </div>
-                </div>
-                <div class="box__service">
-                    <i class="fas fa-medal box__service__icon"></i>
-                    <div class="box_service__content">
-                        <h2 class="box__service__title">Los detalles de nuestro servicio</h2>
-                        <a href="" class="box__service__link">Revisa nuestros términos y condiciones ></a>
+                <div class="box__services__space">
+                    <div class="box__services__list">
+                        <div class="box__service">
+                            <i class="fas fa-truck box__service__icon"></i>
+                            <div class="box_service__content">
+                                <h2 class="box__service__title">Despacho a domicilio</h2>
+                                <a href="" class="box__service__link">Ver más condiciones de despacho ></a>
+                            </div>
+                        </div>
+                        <div class="box__service">
+                            <i class="fas fa-store box__service__icon"></i>
+                            <div class="box_service__content">
+                                <h2 class="box__service__title">Retiro en tienda</h2>
+                                <a href="" class="box__service__link">Compra online y retira en tienda ></a>
+                            </div>
+                        </div>
+                        <div class="box__service">
+                            <i class="fas fa-credit-card box__service__icon"></i>
+                            <div class="box_service__content">
+                                <h2 class="box__service__title">Todo medio de pago</h2>
+                                <a href="" class="box__service__link">Conoce todos los detalles ></a>
+                            </div>
+                        </div>
+                        <div class="box__service">
+                            <i class="fas fa-medal box__service__icon"></i>
+                            <div class="box_service__content">
+                                <h2 class="box__service__title">Los detalles de nuestro servicio</h2>
+                                <a href="" class="box__service__link">Revisa nuestros términos y condiciones ></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -809,5 +844,7 @@
     <script src="./js/carrousel.js"></script>
     <script src="./js/actionMarks.js"></script>
     <script src="./js/actionProducts.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/changeComuna.js"></script>
 </body>
 </html>
