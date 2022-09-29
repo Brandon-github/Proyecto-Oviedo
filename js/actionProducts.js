@@ -1,4 +1,4 @@
-let card = document.querySelectorAll('.card');
+let card = document.querySelectorAll('.card--destac');
 let buttonProduct = document.querySelectorAll('.desc__button');
 
 let productWidthLeft = 0;
